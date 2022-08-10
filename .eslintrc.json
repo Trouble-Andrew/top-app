@@ -1,7 +1,15 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"],
+  "extends": ["next/core-web-vitals", "airbnb-base", "prettier"],
   "plugins": ["prettier"],
   "rules": {
+    "no-undef": "off",
     "prettier/prettier": ["error"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }

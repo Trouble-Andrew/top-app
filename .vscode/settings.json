@@ -3,5 +3,9 @@
   "stylelint.useLocal": true,
 
   // Форматирование при сохранении файла
-  "stylelint.autoFixOnSave": true
+  "stylelint.autoFixOnSave": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

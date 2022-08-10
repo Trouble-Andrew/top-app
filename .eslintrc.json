@@ -3,7 +3,8 @@
   "plugins": ["prettier"],
   "rules": {
     "no-undef": "off",
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "class-methods-use-this": ["error", { "exceptMethods": ["render"] }]
   },
   "settings": {
     "import/resolver": {

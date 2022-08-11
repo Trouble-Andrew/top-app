@@ -10,7 +10,8 @@
   "rules": {
     "no-undef": "off",
     "prettier/prettier": ["error"],
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-no-useless-fragment": "off"
   },
   "globals": {
     "React": "readonly"

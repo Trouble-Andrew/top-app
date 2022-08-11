@@ -1,9 +1,11 @@
 import cn from 'classnames';
 import { ButtonProps } from './Button.props';
 import styles from './Button.module.css';
+import ArrowIcon from './arrow.svg';
 
 function Button({
   appearance,
+  arrow = 'none',
   children,
   className,
   ...props
@@ -18,6 +20,15 @@ function Button({
       {...props}
     >
       {children}
+      {arrow !== 'none' && (
+        <span
+          className={cn(styles.arrow, {
+            [styles.down]: arrow === 'down',
+          })}
+        >
+          <ArrowIcon />
+        </span>
+      )}
     </button>
   );
 }

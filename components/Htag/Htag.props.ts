@@ -1,4 +1,10 @@
-export interface HtagProps {
+import { DetailedHTMLProps, HTMLAttributes } from 'react';
+
+export interface HtagProps
+  extends DetailedHTMLProps<
+    HTMLAttributes<HTMLParagraphElement>,
+    HTMLParagraphElement
+  > {
   tag: 'h1' | 'h2' | 'h3';
   children: React.ReactNode;
 }

@@ -2,6 +2,7 @@
 
 import Button from '../components/Button/Button';
 import Htag from '../components/Htag/Htag';
+import P from '../components/P/P';
 
 export default function Home(): JSX.Element {
   return (
@@ -21,6 +22,10 @@ export default function Home(): JSX.Element {
       <Button appearance="ghost" arrow="down">
         Button
       </Button>
+
+      <P>Paragraph default</P>
+      <P size="small">Paragraph small</P>
+      <P size="large">Paragraph default</P>
     </>
   );
 }
